@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Movie Box Office Analytics</title>
+
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Navigation -->
+<nav>
+    <h2 class="logo">Ishoda</h2>
+    <a href="../index.html" class="back-link">
+        ← Back to Portfolio
+    </a>
+</nav>
+
+
+
+<!-- Project Header -->
+<section class="project-header">
+    <h1>Movie Revenue Analytics: Impact of Ratings on Box Office Performance</h1>
+
+    <p>Analyzing whether positive reviews influence audience 
+        interest using box office data (2000–2024)</p>
+
+    <!-- <div class="tech-tags">
+        <span>R</span>
+        <span>RStudio</span>
+        <span>ggplot2</span>
+        <span>dplyr</span>
+    </div> -->
+</section>
+
+
+
+
+<!-- Overview -->
+<section class="details-section">
+    <h2>Project Overview</h2>
+    
+    <p>This project investigates whether positive reviews influence 
+    audience interest and financial success in the movie industry.
+
+    Using box office data from 2000–2024, the analysis 
+    explores the relationship between movie ratings and worldwide 
+    revenue through descriptive analytics, inferential statistics, 
+    and predictive modelling.</p>
+</section>
+
+
+
+
+
+
+<!-- RProblam statement -->
+<section class="details-section">
+    <h2>Problem Statement</h2>
+
+    <p>Do movies with higher ratings generate higher worldwide revenue?
+    <br>
+    The project evaluates the statement:
+    <br>
+    <b>"Positive Reviews Influence Audience Interest"</b>
+    <br>
+    by measuring the relationship between audience ratings and box office performance.</p>
+</section>
+
+
+
+
+
+
+
+<!-- Dataset -->
+<section class="details-section">
+    <h2>Dataset</h2>
+
+    <ul>
+        <li>Kaggle Box Office Dataset (2000–2024)</li>
+        <li>Approximately 5,000 movie records</li>
+        <li>Release Group  |  Worldwide Revenue  |  Domestic Revenue  |  Foreign Revenue  |  Year
+        Genre  |  Rating  |  Vote Count  |  Production Country  |  Language</li>
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+<!--Technologies-->
+<section class="details-section">
+    <h2>Technologies</h2>
+        <p><ul>
+            <li><b>Programming Language</b>: R</li>
+            <li><b>Libraries</b>: ggplot2 | dplyr | dunn.test</li>
+            <li><b>Statistical Techniques</b>: Exploratory Data Analysis | Shapiro-Wilk Test | Kruskal-Wallis Test | Dunn's Post Hoc Test | Spearman Correlation | Linear Regression</li>
+        </ul></p>
+</section>
+
+
+
+
+
+<!-- Analytical Approach -->
+<section class="details-section">
+    <h2>Analytical Approach</h2>
+    <div class="analytics-container">
+        <div class="analytics-card">
+            <h3>Descriptive Analytics</h3>
+            <p>Used to understand movie revenue patterns and rating distributions.</p>
+
+            <ul>
+                <li>Data cleaning and preprocessing</li>
+                <li>Revenue distribution analysis</li>
+                <li>Rating category comparison</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+            </ul>
+        </div>
+        <div class="analytics-card">
+            <h3>Inferential Analytics</h3>
+            <p>Used statistical tests to validate whether ratings influence revenue.</p>
+
+            <ul>
+                <li>Shapiro-Wilk normality test</li>
+                <li>Kruskal-Wallis test</li>
+                <li>Dunn's post-hoc analysis</li>
+                <li>Spearman correlation</li>
+            </ul>
+        </div>
+        <div class="analytics-card">
+            <h3>Predictive Analytics</h3>
+            <p>Built a statistical model to estimate revenue based on ratings.</p>
+
+            <ul>
+                <li>Linear Regression Model</li>
+                <li>Train-test split</li>
+                <li>R² evaluation</li>
+                <li>RMSE measurement</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Workflow -->
+<section class="details-section">
+    <h2>Project Workflow</h2>
+    <div class="timeline">
+    <div class="process-timeline">
+
+    <div class="process-item">
+        <div class="dot"></div>
+        <div class="content">
+        <h4>Data Collection</h4>
+        <p>Gathering movie datasets including ratings, revenue, genres, and other attributes.</p>
+        </div>
+    </div>
+
+    <div class="process-item">
+        <div class="dot"></div>
+        <div class="content">
+        <h4>Data Cleaning</h4>
+        <p>Handling missing values, duplicates, incorrect formats, and preparing data for analysis.</p>
+        </div>
+    </div>
+
+    <div class="process-item">
+        <div class="dot"></div>
+        <div class="content">
+        <h4>Exploratory Analysis</h4>
+        <p>Using visualizations to identify patterns, trends, and relationships in the dataset.</p>
+        </div>
+    </div>
+
+    <div class="process-item">
+        <div class="dot"></div>
+        <div class="content">
+        <h4>Statistical Testing</h4>
+        <p>Applying hypothesis testing techniques to validate findings.</p>
+        </div>
+    </div>
+
+    <div class="process-item">
+        <div class="dot"></div>
+        <div class="content">
+        <h4>Model Development</h4>
+        <p>Building predictive models and evaluating their performance.</p>
+        </div>
+    </div>
+
+    <div class="process-item">
+        <div class="dot"></div>
+        <div class="content">
+        <h4>Evaluation</h4>
+        <p>Interpreting results and extracting meaningful insights.</p>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Key Features Section -->
+<section class="details-section">
+    <h2>Key Features</h2>
+    <div class="feature-list">
+          <div class="feature-item">
+            <h4>Data Processing</h4>
+            <p>Data cleaning, missing value handling, duplicate removal, and feature preparation.</p>
+          </div>
+        
+          <div class="feature-item">
+            <h4>Revenue Analysis</h4>
+            <p>Analysis of worldwide revenue patterns across different movie rating categories.</p>
+          </div>
+        
+          <div class="feature-item">
+            <h4>Statistical Validation</h4>
+            <p>Applied hypothesis testing techniques to validate relationships between ratings and revenue.</p>
+          </div>
+        
+          <div class="feature-item">
+            <h4>Predictive Modelling</h4>
+            <p>Built a linear regression model to evaluate revenue prediction capability.</p>
+          </div>
+        
+          <div class="feature-item">
+            <h4>Data Visualization</h4>
+            <p>Created visual insights using R visualization libraries to communicate findings.</p>
+          </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="details-section">
+<div class="results-section">
+
+  <div class="findings">
+    <h3>Key Findings</h3>
+
+    <ul>
+      <li>Higher-rated movies generally achieved higher revenue.</li>
+      <li>Kruskal-Wallis and Dunn's tests confirmed significant differences between rating groups.</li>
+      <li>Spearman correlation showed a positive relationship between ratings and revenue.</li>
+      <li>Linear regression showed ratings influence revenue but alone are not sufficient for accurate prediction.</li>
+    </ul>
+  </div>
+
+
+  <div class="technical-results">
+
+    <h3>Technical Results</h3>
+
+    <div class="result-card">
+      <h4>Kruskal-Wallis Test</h4>
+      <p>χ² = 100.49</p>
+      <span>p &lt; 0.001</span>
+    </div>
+
+    <div class="result-card">
+      <h4>Spearman Correlation</h4>
+      <p>ρ = 0.14</p>
+      <span>Positive Relationship</span>
+    </div>
+
+    <div class="result-card">
+      <h4>Regression Model</h4>
+      <p>R² = 0.034</p>
+      <span>RMSE = 1.14</span>
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+
+
+
+
+
+<section class="details-section">
+    <h2>Project Visualizations</h2>
+
+    <div class="visualization-gallery">
+        <img src="images/revenue-rating-boxplot.png" alt="Revenue vs Rating Boxplot">
+        <img src="images/hit-flop-chart.png" alt="Hit vs Flop Chart">
+        <img src="images/regression-chart.png" alt="Regression Analysis Chart">
+    </div>
+</section>
+
+
+
+
+
+<section class="details-section">
+    <div class="documentation">
+
+    <h3>Presentation & Documentation</h3>
+
+    <div class="doc-buttons">
+        <a href="assets/movie-analysis-presentation.pptx" class="doc-btn" target="_blank">
+        View Presentation (.pptx) →
+        </a>
+
+        <a href="assets/movie-analysis-report.pdf" class="doc-btn" target="_blank">
+        View Report (.pdf) →
+        </a>
+    </div>
+
+    </div>
+</section>
+
+
+
+<section class="details-section">
+    <div class="github-section">
+  <h3>GitHub Repository</h3>
+  <p>
+    Source code and analysis workflow will be available here.
+  </p>
+
+  <a href="YOUR_GITHUB_LINK" class="navy-btn" target="_blank">
+    View Repository →
+  </a>
+</div>
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Ishoda Umayangana
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
