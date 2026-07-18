@@ -8,12 +8,38 @@
     <title>Movie Box Office Analytics</title>
 
     <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="../header.css">
+    <script src="../script.js" defer></script>
 
 </head>
 
 
 <body>
 
+    <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">IU</span>
+        <span class="brand-text">
+          <strong>Ishoda Umayangana</strong>
+          <em>Data Science Undergraduate</em>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
 
 <!-- Navigation -->
 <nav>
@@ -61,7 +87,7 @@
 
 
 
-<!-- RProblam statement -->
+<!-- Problam statement -->
 <section class="details-section">
     <h2>Problem Statement</h2>
 
@@ -85,11 +111,15 @@
     <h2>Dataset</h2>
 
     <ul>
-        <li>Kaggle Box Office Dataset (2000–2024)</li>
-        <li>Approximately 5,000 movie records</li>
-        <li>Release Group  |  Worldwide Revenue  |  Domestic Revenue  |  Foreign Revenue  |  Year
-        Genre  |  Rating  |  Vote Count  |  Production Country  |  Language</li>
-    </ul>
+    <li>Kaggle Box Office Dataset (2000–2024)</li>
+    <li>Approximately 5,000 movie records</li>
+    <li>Features included:
+        Movie title  |  release year  |  genre  |  rating,
+        vote count  |  worldwide revenue  |  
+        domestic revenue  |  foreign revenue  |  
+        production country  |  language
+    </li>
+</ul>
 </section>
 
 
@@ -117,6 +147,17 @@
 <section class="details-section">
     <h2>Analytical Approach</h2>
     <div class="analytics-container">
+    
+        <div class="analytics-card">
+            <h3>Data Preprocessing</h3>
+            <p>Prepared raw movie data for statistical analysis and modelling.</p>
+            <ul>
+                <li>Handled missing values and inconsistent records.</li>
+                <li>Converted revenue and rating fields into suitable numeric formats.</li>
+                <li>Created derived features such as movie era and Hit/Flop categories.</li>
+                <li>Prepared cleaned dataset for statistical testing and modelling.</li>
+            </ul>
+        </div>
         <div class="analytics-card">
             <h3>Descriptive Analytics</h3>
             <p>Used to understand movie revenue patterns and rating distributions.</p>
@@ -263,7 +304,7 @@
     <h3>Key Findings</h3>
 
     <ul>
-      <li>Higher-rated movies generally achieved higher revenue.</li>
+      <li>Movies with higher audience ratings showed a tendency toward higher worldwide revenue, although the relationship was relatively weak.</li>
       <li>Kruskal-Wallis and Dunn's tests confirmed significant differences between rating groups.</li>
       <li>Spearman correlation showed a positive relationship between ratings and revenue.</li>
       <li>Linear regression showed ratings influence revenue but alone are not sufficient for accurate prediction.</li>
@@ -316,7 +357,34 @@
 
 
 
+<section class="details-section">
 
+<h2>
+Limitations & Future Improvements
+</h2>
+
+
+<ul>
+
+<li>
+Movie ratings alone cannot accurately predict box office revenue.
+</li>
+
+<li>
+Future models could include additional variables such as:
+budget, marketing expenditure, actors, directors, genre,
+and audience demographics.
+</li>
+
+<li>
+Advanced machine learning models could be explored for improved
+revenue prediction.
+</li>
+
+</ul>
+
+
+</section>
 
 <section class="details-section">
     <div class="documentation">
@@ -342,8 +410,9 @@
     <div class="github-section">
   <h3>GitHub Repository</h3>
   <p>
-    Source code and analysis workflow will be available here.
-  </p>
+    Contains R scripts, data preprocessing workflow,
+    statistical analysis, visualizations, and modelling process.
+    </p>
 
   <a href="YOUR_GITHUB_LINK" class="navy-btn" target="_blank">
     View Repository →

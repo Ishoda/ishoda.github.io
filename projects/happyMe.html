@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HappyMe | Habit Tracker Mobile Application</title>
+
+<meta name="description"
+content="HappyMe is a wellness and habit tracking Android application developed using Kotlin, XML and SharedPreferences.">
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../header.css">
+<link rel="stylesheet" href="style-happyMe.css">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+<script src="../script.js" defer></script>
+
+
+</head>
+
+
+<body>
+
+<!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">IU</span>
+        <span class="brand-text">
+          <strong>Ishoda Umayangana</strong>
+          <em>Data Science Undergraduate</em>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+
+<section class="project-hero">
+
+
+<div class="container project-grid">
+
+
+
+<div class="project-content">
+
+
+<p class="project-tag">
+Mobile Application Development
+</p>
+
+
+
+<h1>
+HappyMe
+
+<span>
+Habit Tracker & Wellness App
+</span>
+
+</h1>
+
+
+
+<p class="project-description">
+
+A personal wellness Android application designed
+to encourage healthy routines through habit tracking,
+mood monitoring, hydration management and
+personal progress insights.
+
+</p>
+
+
+
+
+<div class="tech-stack">
+
+<span>Kotlin</span>
+<span>Android Studio</span>
+<span>XML</span>
+<span>SharedPreferences</span>
+<span>Fragments</span>
+<span>PDF Generation</span>
+<span>Notifications</span>
+
+</div>
+
+
+
+<div class="project-buttons">
+
+
+<a href="../index.html#projects"
+class="btn-secondary">
+
+← Back Projects
+
+</a>
+
+
+<a href="#screenshots"
+class="btn-primary">
+
+View Screenshots
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="project-image">
+
+
+<img src="images/happyme-cover.png"
+alt="HappyMe mobile application interface"
+loading="lazy">
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ================= OVERVIEW ================= -->
+
+
+<section class="section alt">
+
+
+<div class="container">
+
+
+<h2>
+Project Overview
+</h2>
+
+
+
+<p>
+
+HappyMe is a wellness-focused mobile application
+developed to help users maintain positive daily habits.
+
+The application combines habit management,
+emotional wellness tracking, hydration monitoring
+and personal progress reporting into one simple platform.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ================= PROBLEM ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<h2>
+Problem Statement
+</h2>
+
+
+<p>
+
+Many users struggle to maintain healthy routines
+because they lack a simple and personalized way
+to track daily habits, monitor emotions and measure
+their progress.
+
+HappyMe addresses this challenge by providing a
+single platform that supports consistency,
+mindfulness and self-improvement.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= FEATURES ================= -->
+
+
+<section class="section alt">
+
+
+<div class="container">
+
+
+<h2>
+Main Features
+</h2>
+
+
+
+<div class="feature-grid">
+
+
+
+<div class="feature-card">
+
+<h3>
+Home Dashboard
+</h3>
+
+<p>
+Provides daily habit overview, motivational quotes,
+water progress and a 7-day mood summary chart.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+<h3>
+Routine Management
+</h3>
+
+<p>
+Allows users to add, update and track habits.
+Completed habits are separated from pending tasks.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+<h3>
+Mind Tracking
+</h3>
+
+<p>
+Users can record moods, write reflections
+and review emotional history.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+<h3>
+Fuel Tracker
+</h3>
+
+<p>
+Tracks daily water intake with reminders
+and automatic daily reset functionality.
+</p>
+
+</div>
+
+
+
+
+<div class="feature-card">
+
+<h3>
+MeTime Profile
+</h3>
+
+<p>
+Displays statistics, streaks, settings,
+theme customization and preferences.
+</p>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= WORKFLOW ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<h2>
+Application Workflow
+</h2>
+
+
+
+<div class="workflow">
+
+
+<span>
+User Onboarding
+</span>
+
+↓
+
+<span>
+Select Habits
+</span>
+
+↓
+
+<span>
+Daily Tracking
+</span>
+
+↓
+
+<span>
+Mood & Water Monitoring
+</span>
+
+↓
+
+<span>
+Progress Reports
+</span>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= TECHNICAL ================= -->
+
+
+<section class="section alt">
+
+
+<div class="container">
+
+
+<h2>
+Technical Implementation
+</h2>
+
+
+
+
+<div class="tech-box">
+
+
+<h3>
+Application Architecture
+</h3>
+
+
+
+<p>
+
+The application follows a single Activity architecture
+with multiple Fragments for modular design.
+
+</p>
+
+
+
+<pre>
+
+MainActivity
+
+ ├── Home Fragment
+ ├── Routine Fragment
+ ├── Mind Fragment
+ ├── Fuel Fragment
+ └── MeTime Fragment
+
+</pre>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="tech-box">
+
+
+<h3>
+Data Persistence - SharedPreferences
+</h3>
+
+
+
+<p>
+
+Local storage is used to maintain user preferences
+and application progress even after closing the app.
+
+</p>
+
+
+
+<ul>
+
+<li>User profile information</li>
+<li>Habit selections</li>
+<li>Mood history</li>
+<li>Water intake records</li>
+<li>Theme preferences</li>
+<li>Completed habit history</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= ADVANCED FEATURES ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<h2>
+Advanced Features
+</h2>
+
+
+
+<ul class="outcomes">
+
+<li>
+Hydration reminder notifications.
+</li>
+
+<li>
+PDF progress and mood report generation.
+</li>
+
+<li>
+Dark mode support.
+</li>
+
+<li>
+Mood visualization through weekly summaries.
+</li>
+
+<li>
+Persistent user preferences using SharedPreferences.
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= UI DESIGN ================= -->
+
+
+<section class="section alt">
+
+
+<div class="container">
+
+
+<h2>
+UI / UX Design
+</h2>
+
+
+<p>
+
+The application uses a natural green color palette
+to create a calm and positive wellness experience.
+
+The interface focuses on simplicity, readability
+and motivation through clean layouts and clear
+progress indicators.
+
+</p>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ================= SCREENSHOTS ================= -->
+
+
+<section class="section" id="screenshots">
+
+
+<div class="container">
+
+
+<h2>
+Application Screenshots
+</h2>
+
+
+
+<div class="gallery">
+
+
+<img src="images/home.png"
+alt="Home Dashboard"
+loading="lazy">
+
+
+<img src="images/routine.png"
+alt="Routine Management"
+loading="lazy">
+
+
+<img src="images/mind.png"
+alt="Mood Tracking"
+loading="lazy">
+
+
+<img src="images/fuel.png"
+alt="Hydration Tracker"
+loading="lazy">
+
+
+<img src="images/metime.png"
+alt="Profile Settings"
+loading="lazy">
+
+
+<img src="images/darkmode.png"
+alt="Dark Mode"
+loading="lazy">
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ================= OUTCOMES ================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<h2>
+Project Outcomes
+</h2>
+
+
+
+<ul class="outcomes">
+
+
+<li>
+Developed a complete Android wellness application using Kotlin and XML.
+</li>
+
+
+<li>
+Implemented local data persistence using SharedPreferences.
+</li>
+
+
+<li>
+Designed a modular Fragment-based application structure.
+</li>
+
+
+<li>
+Integrated habit tracking, mood monitoring and hydration management.
+</li>
+
+
+<li>
+Created a responsive and user-friendly mobile interface.
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Ishoda Umayangana
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
