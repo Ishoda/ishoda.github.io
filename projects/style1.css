@@ -1,42 +1,27 @@
 .project-header {
-
-    padding:100px 10%;
-    background:#081b33;
-    color:white;
-
+  padding: 100px 10%;
+  background: #081b33;
+  color: white;
 }
-
 
 .project-header h1 {
-
-    font-size:45px;
-    margin-bottom:20px;
-
+  font-size: 45px;
+  margin-bottom: 20px;
 }
-
-
 
 .details-section {
-
-    padding:50px 10%;
-
+  padding: 50px 10%;
 }
-
 
 .details-section h2 {
-
-    color:#0b2c50;
-    margin-bottom:20px;
-
+  color: #0b2c50;
+  margin-bottom: 20px;
 }
-
 
 .details-section p,
 .details-section li {
-
-    font-size:18px;
-    line-height:1.7;
-
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 ul {
@@ -47,7 +32,6 @@ ul {
 ul li::before {
   content: "- ";
 }
-
 
 .feature-list {
   display: grid;
@@ -73,7 +57,6 @@ ul li::before {
   font-size: 14px;
   line-height: 1.6;
 }
-
 
 .process-timeline {
   margin: 40px 0;
@@ -122,25 +105,20 @@ ul li::before {
   line-height: 1.6;
 }
 
-
 .tech-tags span,
 .method-list span {
+  display: inline-block;
 
+  background: #e7f0ff;
 
-    display:inline-block;
+  color: #123;
 
-    background:#e7f0ff;
+  padding: 8px 15px;
 
-    color:#123;
+  border-radius: 20px;
 
-    padding:8px 15px;
-
-    border-radius:20px;
-
-    margin:5px;
-
+  margin: 5px;
 }
-
 
 .results-section {
   display: grid;
@@ -166,7 +144,6 @@ ul li::before {
   margin-bottom: 14px;
   line-height: 1.6;
 }
-
 
 .technical-results {
   display: grid;
@@ -198,16 +175,12 @@ ul li::before {
   font-size: 14px;
 }
 
-
 /* Mobile */
-@media(max-width:900px){
+@media (max-width: 900px) {
   .results-section {
     grid-template-columns: 1fr;
   }
 }
-
-
-
 
 .documentation {
   margin-top: 50px;
@@ -265,73 +238,46 @@ ul li::before {
   transform: translateY(-2px);
 }
 
-
 .workflow {
+  display: flex;
 
-    display:flex;
+  flex-wrap: wrap;
 
-    flex-wrap:wrap;
-
-    gap:15px;
-
-
+  gap: 15px;
 }
-
 
 .workflow div {
+  padding: 20px;
 
+  background: #f3f5f7;
 
-    padding:20px;
-
-    background:#f3f5f7;
-
-    border-radius:10px;
-
+  border-radius: 10px;
 }
-
-
-
-
 
 .gallery {
+  display: grid;
 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:20px;
-
+  gap: 20px;
 }
-
-
 
 .gallery img {
+  width: 100%;
 
-    width:100%;
-
-    border-radius:15px;
-
+  border-radius: 15px;
 }
-
-
-
 
 nav {
+  display: flex;
 
-    display:flex;
+  justify-content: space-between;
 
-    justify-content:space-between;
-
-    padding:25px 10%;
-
+  padding: 25px 10%;
 }
 
-
 nav a {
+  text-decoration: none;
 
-    text-decoration:none;
-
-    color:#123;
-
+  color: #123;
 }

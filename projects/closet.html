@@ -1,785 +1,331 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Closet | Fashion Shopping App UI Design</title>
+
+    <meta
+      name="description"
+      content="Closet is a mobile UI/UX design project focused on creating a premium fashion shopping experience for Sri Lankan users."
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="styles-closet.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- HEADER / NAV -->
+    <header class="site-header">
+      <div class="container nav-inner">
+        <a href="#home" class="brand">
+          <span class="brand-mark">IU</span>
+          <span class="brand-text">
+            <strong>Ishoda Umayangana</strong>
+            <em>Data Science Undergraduate</em>
+          </span>
+        </a>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="siteNav" aria-label="Primary">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="project-hero">
+      <div class="container project-grid">
+        <div class="project-content">
+          <p class="project-tag">UI/UX Design | Mobile Application Concept</p>
+
+          <h1>
+            Closet
+
+            <span> Fashion Shopping Platform </span>
+          </h1>
+
+          <p class="project-description">
+            A modern mobile application concept designed to simplify fashion
+            shopping by bringing Sri Lankan clothing brands into one platform
+            with personalized recommendations.
+          </p>
+
+          <div class="tech-stack">
+            <span>Figma</span>
+            <span>Android XML</span>
+            <span>UI Components</span>
+            <span>Prototyping</span>
+            <span>Material Design</span>
+          </div>
+
+          <div class="project-buttons">
+            <a href="../index.html#projects" class="btn-secondary">
+              ← Back Projects
+            </a>
+
+            <a href="#screenshots" class="btn-primary"> View Designs </a>
+          </div>
+        </div>
+
+        <div class="project-image">
+          <img
+            src="images/closet/cover.png"
+            alt="Closet Mobile Application Design"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
 
-<head>
+    <!-- PROJECT INFO -->
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <section class="section">
+      <div class="container">
+        <h2>Project Information</h2>
 
+        <div class="info-grid">
+          <div>
+            <strong> Module </strong>
 
-<title>Closet | Fashion Shopping App UI Design</title>
+            <p>IT2010 - Mobile Application Development</p>
+          </div>
 
+          <div>
+            <strong> Project Type </strong>
 
-<meta name="description"
-content="Closet is a mobile UI/UX design project focused on creating a premium fashion shopping experience for Sri Lankan users.">
+            <p>Mobile UI/UX Design</p>
+          </div>
 
+          <div>
+            <strong> Platform </strong>
 
-<link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../header.css">
-<link rel="stylesheet" href="styles-closet.css">
+            <p>Android Application</p>
+          </div>
 
+          <div>
+            <strong> Tools </strong>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <p>Figma + Android XML</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- OVERVIEW -->
 
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <section class="section alt">
+      <div class="container">
+        <h2>Project Overview</h2>
 
+        <p>
+          Closet is a fashion shopping application concept created to improve
+          the online shopping experience for Sri Lankan fashion lovers. The
+          application combines multiple clothing brands into a single platform
+          while providing personalized recommendations based on user
+          preferences, measurements and style choices.
+        </p>
+      </div>
+    </section>
 
-<script src="../script.js" defer></script>
+    <!-- PROBLEM -->
 
+    <section class="section">
+      <div class="container">
+        <h2>Problem & Solution</h2>
 
-</head>
+        <div class="two-column">
+          <div>
+            <h3>Problem</h3>
 
+            <p>
+              Users currently need to switch between different websites,
+              Instagram pages and physical stores to compare clothing
+              collections and prices.
+            </p>
+          </div>
 
+          <div>
+            <h3>Solution</h3>
 
-<body>
+            <p>
+              Closet provides a centralized fashion platform where users can
+              discover brands, compare products and receive personalized
+              suggestions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- FEATURES -->
 
+    <section class="section alt">
+      <div class="container">
+        <h2>Key Features</h2>
 
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Unified Store Collection</h3>
 
-<!-- HEADER / NAV -->
-  <header class="site-header">
-    <div class="container nav-inner">
-      <a href="#home" class="brand">
-        <span class="brand-mark">IU</span>
-        <span class="brand-text">
-          <strong>Ishoda Umayangana</strong>
-          <em>Data Science Undergraduate</em>
-        </span>
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="nav" id="siteNav" aria-label="Primary">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#certifications" class="nav-link">Certifications</a>
-        <a href="#resume" class="nav-link">Resume</a>
-        <a href="#contact" class="nav-link">Contact</a>
-      </nav>
-    </div>
-  </header>
+            <p>Browse multiple Sri Lankan fashion brands in one application.</p>
+          </div>
 
+          <div class="feature-card">
+            <h3>Product Filtering</h3>
 
+            <p>Filter products based on size, category and price.</p>
+          </div>
 
+          <div class="feature-card">
+            <h3>AI Designer</h3>
 
+            <p>
+              Receive recommendations using body measurements and preferences.
+            </p>
+          </div>
 
+          <div class="feature-card">
+            <h3>Ratings & Reviews</h3>
 
+            <p>Help users make better purchasing decisions.</p>
+          </div>
 
-<!-- HERO -->
+          <div class="feature-card">
+            <h3>Favorites</h3>
 
+            <p>Save preferred products and brands for future access.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="project-hero">
+    <!-- DESIGN SYSTEM -->
 
+    <section class="section">
+      <div class="container">
+        <h2>Design System</h2>
 
-<div class="container project-grid">
+        <div class="color-system">
+          <div class="color-card black">
+            60%
 
+            <h3>Black</h3>
 
+            <p>Primary branding and typography</p>
+          </div>
 
-<div class="project-content">
+          <div class="color-card white">
+            30%
 
+            <h3>White / Off-white</h3>
 
-<p class="project-tag">
-UI/UX Design | Mobile Application Concept
-</p>
+            <p>Background and product visibility</p>
+          </div>
 
+          <div class="color-card gold">
+            10%
 
+            <h3>Gold</h3>
 
-<h1>
+            <p>Highlights and premium accents</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-Closet
+    <!-- UI SKILLS -->
 
-<span>
-Fashion Shopping Platform
-</span>
+    <section class="section alt">
+      <div class="container">
+        <h2>UI Implementation</h2>
 
+        <ul class="outcomes">
+          <li>Designed layouts using Android XML principles.</li>
 
-</h1>
+          <li>Applied Constraint Layout and Linear Layout structures.</li>
 
+          <li>Used proper spacing, margins and padding for consistency.</li>
 
+          <li>Created reusable UI components.</li>
 
-<p class="project-description">
+          <li>Focused on visual hierarchy and user experience.</li>
+        </ul>
+      </div>
+    </section>
 
-A modern mobile application concept designed
-to simplify fashion shopping by bringing
-Sri Lankan clothing brands into one platform
-with personalized recommendations.
+    <!-- SCREENSHOTS -->
 
-</p>
+    <section class="section" id="screenshots">
+      <div class="container">
+        <h2>Application Screenshots</h2>
 
+        <div class="gallery">
+          <img
+            src="images/closet/onboarding.png"
+            alt="Closet onboarding screens"
+          />
 
+          <img src="images/closet/home.png" alt="Closet home interface" />
 
+          <img src="images/closet/products.png" alt="Product browsing screen" />
 
-<div class="tech-stack">
+          <img src="images/closet/filter.png" alt="Product filtering" />
 
+          <img src="images/closet/profile.png" alt="Profile interface" />
 
-<span>Figma</span>
-<span>Android XML</span>
-<span>UI Components</span>
-<span>Prototyping</span>
-<span>Material Design</span>
+          <img src="images/closet/prototype.png" alt="Prototype flow" />
+        </div>
+      </div>
+    </section>
 
+    <!-- OUTCOME -->
 
-</div>
+    <section class="section">
+      <div class="container">
+        <h2>Design Outcomes</h2>
 
+        <ul class="outcomes">
+          <li>Created a premium fashion shopping application concept.</li>
 
+          <li>Applied UI/UX principles for mobile usability.</li>
 
+          <li>Designed a consistent color system using the 60-30-10 rule.</li>
 
-<div class="project-buttons">
+          <li>Developed user-friendly navigation and screen flows.</li>
 
+          <li>Improved understanding of Android UI components and layouts.</li>
+        </ul>
+      </div>
+    </section>
 
-<a href="../index.html#projects"
-class="btn-secondary">
-
-← Back Projects
-
-</a>
-
-
-
-<a href="#screenshots"
-class="btn-primary">
-
-View Designs
-
-</a>
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-<div class="project-image">
-
-
-<img src="images/closet/cover.png"
-alt="Closet Mobile Application Design"
-loading="lazy">
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- PROJECT INFO -->
-
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h2>
-Project Information
-</h2>
-
-
-
-<div class="info-grid">
-
-
-<div>
-
-<strong>
-Module
-</strong>
-
-<p>
-IT2010 - Mobile Application Development
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<strong>
-Project Type
-</strong>
-
-<p>
-Mobile UI/UX Design
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<strong>
-Platform
-</strong>
-
-<p>
-Android Application
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<strong>
-Tools
-</strong>
-
-<p>
-Figma + Android XML
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- OVERVIEW -->
-
-
-<section class="section alt">
-
-
-<div class="container">
-
-
-<h2>
-Project Overview
-</h2>
-
-
-<p>
-
-Closet is a fashion shopping application concept
-created to improve the online shopping experience
-for Sri Lankan fashion lovers.
-
-The application combines multiple clothing brands
-into a single platform while providing personalized
-recommendations based on user preferences,
-measurements and style choices.
-
-</p>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- PROBLEM -->
-
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h2>
-Problem & Solution
-</h2>
-
-
-<div class="two-column">
-
-
-<div>
-
-
-<h3>
-Problem
-</h3>
-
-
-<p>
-
-Users currently need to switch between different
-websites, Instagram pages and physical stores
-to compare clothing collections and prices.
-
-</p>
-
-
-</div>
-
-
-
-
-<div>
-
-
-<h3>
-Solution
-</h3>
-
-
-<p>
-
-Closet provides a centralized fashion platform
-where users can discover brands, compare products
-and receive personalized suggestions.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- FEATURES -->
-
-
-<section class="section alt">
-
-
-<div class="container">
-
-
-<h2>
-Key Features
-</h2>
-
-
-
-
-<div class="feature-grid">
-
-
-<div class="feature-card">
-
-<h3>
-Unified Store Collection
-</h3>
-
-<p>
-Browse multiple Sri Lankan fashion brands
-in one application.
-</p>
-
-</div>
-
-
-
-<div class="feature-card">
-
-<h3>
-Product Filtering
-</h3>
-
-<p>
-Filter products based on size,
-category and price.
-</p>
-
-</div>
-
-
-
-<div class="feature-card">
-
-<h3>
-AI Designer
-</h3>
-
-<p>
-Receive recommendations using
-body measurements and preferences.
-</p>
-
-</div>
-
-
-
-
-<div class="feature-card">
-
-<h3>
-Ratings & Reviews
-</h3>
-
-<p>
-Help users make better purchasing decisions.
-</p>
-
-</div>
-
-
-
-<div class="feature-card">
-
-<h3>
-Favorites
-</h3>
-
-<p>
-Save preferred products and brands
-for future access.
-</p>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- DESIGN SYSTEM -->
-
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h2>
-Design System
-</h2>
-
-
-
-<div class="color-system">
-
-
-<div class="color-card black">
-
-60%
-
-<h3>
-Black
-</h3>
-
-<p>
-Primary branding and typography
-</p>
-
-</div>
-
-
-
-
-<div class="color-card white">
-
-30%
-
-<h3>
-White / Off-white
-</h3>
-
-<p>
-Background and product visibility
-</p>
-
-</div>
-
-
-
-
-
-<div class="color-card gold">
-
-10%
-
-<h3>
-Gold
-</h3>
-
-<p>
-Highlights and premium accents
-</p>
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- UI SKILLS -->
-
-
-<section class="section alt">
-
-
-<div class="container">
-
-
-<h2>
-UI Implementation
-</h2>
-
-
-<ul class="outcomes">
-
-
-<li>
-Designed layouts using Android XML principles.
-</li>
-
-
-<li>
-Applied Constraint Layout and Linear Layout structures.
-</li>
-
-
-<li>
-Used proper spacing, margins and padding for consistency.
-</li>
-
-
-<li>
-Created reusable UI components.
-</li>
-
-
-<li>
-Focused on visual hierarchy and user experience.
-</li>
-
-
-
-</ul>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- SCREENSHOTS -->
-
-
-<section class="section"
-id="screenshots">
-
-
-<div class="container">
-
-
-<h2>
-Application Screenshots
-</h2>
-
-
-
-<div class="gallery">
-
-
-<img src="images/closet/onboarding.png"
-alt="Closet onboarding screens">
-
-
-<img src="images/closet/home.png"
-alt="Closet home interface">
-
-
-<img src="images/closet/products.png"
-alt="Product browsing screen">
-
-
-<img src="images/closet/filter.png"
-alt="Product filtering">
-
-
-<img src="images/closet/profile.png"
-alt="Profile interface">
-
-
-<img src="images/closet/prototype.png"
-alt="Prototype flow">
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<!-- OUTCOME -->
-
-
-<section class="section">
-
-
-<div class="container">
-
-
-<h2>
-Design Outcomes
-</h2>
-
-
-
-<ul class="outcomes">
-
-
-<li>
-Created a premium fashion shopping application concept.
-</li>
-
-
-<li>
-Applied UI/UX principles for mobile usability.
-</li>
-
-
-<li>
-Designed a consistent color system using the 60-30-10 rule.
-</li>
-
-
-<li>
-Developed user-friendly navigation and screen flows.
-</li>
-
-
-<li>
-Improved understanding of Android UI components and layouts.
-</li>
-
-
-
-</ul>
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<footer>
-
-<p>
-© 2026 Ishoda Umayangana
-</p>
-
-</footer>
-
-
-
-
-</body>
-
+    <footer>
+      <p>© 2026 Ishoda Umayangana</p>
+    </footer>
+  </body>
 </html>

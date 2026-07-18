@@ -27,7 +27,7 @@
   if ("IntersectionObserver" in window && sections.length) {
     const setActive = (id) => {
       links.forEach((l) =>
-        l.classList.toggle("active", l.getAttribute("href") === `#${id}`)
+        l.classList.toggle("active", l.getAttribute("href") === `#${id}`),
       );
     };
     const sectionObserver = new IntersectionObserver(
@@ -38,7 +38,7 @@
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
         if (visible[0]) setActive(visible[0].target.id);
       },
-      { rootMargin: "-45% 0px -50% 0px", threshold: [0, 0.25, 0.5, 1] }
+      { rootMargin: "-45% 0px -50% 0px", threshold: [0, 0.25, 0.5, 1] },
     );
     sections.forEach((s) => sectionObserver.observe(s));
   }
@@ -54,7 +54,7 @@
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.12 },
     );
     revealables.forEach((el) => revealObserver.observe(el));
   } else {

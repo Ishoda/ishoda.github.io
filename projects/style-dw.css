@@ -1,83 +1,52 @@
-body{
-
-font-family:Arial,sans-serif;
-margin:0;
-background:#f8fafc;
-color:#333;
-
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f8fafc;
+  color: #333;
 }
 
-
-
-nav{
-
-display:flex;
-justify-content:space-between;
-padding:25px 10%;
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 10%;
 }
 
-
-nav a{
-
-text-decoration:none;
-color:#0f1b3d;
-
+nav a {
+  text-decoration: none;
+  color: #0f1b3d;
 }
 
-
-
-.project-header{
-
-background:#081b33;
-color:white;
-padding:90px 10%;
-
+.project-header {
+  background: #081b33;
+  color: white;
+  padding: 90px 10%;
 }
 
-
-.project-header h1{
-
-font-size:45px;
-
+.project-header h1 {
+  font-size: 45px;
 }
 
-
-section{
-
-background:white;
-margin:25px 10%;
-padding:40px;
-border-radius:15px;
-
+section {
+  background: white;
+  margin: 25px 10%;
+  padding: 40px;
+  border-radius: 15px;
 }
 
-
-
-h2{
-
-color:#0f1b3d;
-
+h2 {
+  color: #0f1b3d;
 }
 
-
-
-p,li{
-
-line-height:1.7;
-font-size:17px;
-
+p,
+li {
+  line-height: 1.7;
+  font-size: 17px;
 }
-
-
-
 
 .technologies p,
 .technologies li {
-
-    font-size:17px;
-    line-height:1.7;
-
+  font-size: 17px;
+  line-height: 1.7;
 }
 
 ul {
@@ -88,10 +57,6 @@ ul {
 ul li::before {
   content: "- ";
 }
-
-
-
-
 
 .process-timeline {
   margin: 40px 0;
@@ -140,107 +105,61 @@ ul li::before {
   line-height: 1.6;
 }
 
-
-
-
-
-.main-image{
-
-width:100%;
-margin-top:25px;
-border-radius:15px;
-
+.main-image {
+  width: 100%;
+  margin-top: 25px;
+  border-radius: 15px;
 }
-
-
-
 
 .card-container,
-.feature{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-
+.feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
-
-
 
 .card,
-.feature div{
-
-background:#f8fafc;
-padding:25px;
-border-radius:12px;
-
+.feature div {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
 }
 
-
-
-
-.etl-box div{
-
-border-left:3px solid #0f1b3d;
-padding-left:20px;
-margin-bottom:25px;
-
+.etl-box div {
+  border-left: 3px solid #0f1b3d;
+  padding-left: 20px;
+  margin-bottom: 25px;
 }
 
-
-
-
-.dashboard{
-
-width:90%;
-display:block;
-margin:auto;
-border-radius:15px;
-
+.dashboard {
+  width: 90%;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
 }
 
-
-
-
-.skills p{
-
-border-left:3px solid #0f1b3d;
-padding-left:15px;
-
+.skills p {
+  border-left: 3px solid #0f1b3d;
+  padding-left: 15px;
 }
-
-
-
 
 .buttons a,
-.github{
-
-
-display:inline-block;
-background:#0f1b3d;
-color:white;
-padding:12px 25px;
-border-radius:8px;
-text-decoration:none;
-margin-right:10px;
-
-
+.github {
+  display: inline-block;
+  background: #0f1b3d;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 10px;
 }
-
-
 
 .buttons a:hover,
-.github:hover{
-
-background:#1e3a5f;
-
+.github:hover {
+  background: #1e3a5f;
 }
 
-
-
-
-footer{
-
-text-align:center;
-padding:30px;
-
+footer {
+  text-align: center;
+  padding: 30px;
 }
