@@ -30,13 +30,13 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="siteNav" aria-label="Primary">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#certifications" class="nav-link">Certifications</a>
-        <a href="#resume" class="nav-link">Resume</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#resume" class="nav-link">Resume</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
@@ -53,7 +53,7 @@
 
 <!-- Project Header -->
 <section class="project-header">
-    <h1>Movie Revenue Analytics: Impact of Ratings on Box Office Performance</h1>
+    <h1>Movie Revenue Analytics: Exploring the Relationship Between Ratings and Box Office Performance</h1>
 
     <p>Analyzing whether positive reviews influence audience 
         interest using box office data (2000–2024)</p>
@@ -78,7 +78,7 @@
 
     Using box office data from 2000–2024, the analysis 
     explores the relationship between movie ratings and worldwide 
-    revenue through descriptive analytics, inferential statistics, 
+    revenue through descriptive analytics, inferential statistics 
     and predictive modelling.</p>
 </section>
 
@@ -91,19 +91,40 @@
 <section class="details-section">
     <h2>Problem Statement</h2>
 
-    <p>Do movies with higher ratings generate higher worldwide revenue?
-    <br>
-    The project evaluates the statement:
-    <br>
-    <b>"Positive Reviews Influence Audience Interest"</b>
-    <br>
-    by measuring the relationship between audience ratings and box office performance.</p>
+    <p>
+    This project investigates whether the statement 
+    <strong>"Positive Reviews Influence Audience Interest"</strong> 
+    holds true by analyzing the relationship between audience ratings and 
+    worldwide box office revenue.
+    </p>
+
+    <p>
+    The study examines whether higher-rated movies demonstrate stronger box office 
+    performance using descriptive analytics, inferential statistics and predictive modelling.
+    </p>
 </section>
 
+<section class="details-section">
+    <h2>Hypothesis Statement</h2>
 
+    <p>
+    The study evaluates whether movies with higher audience ratings demonstrate 
+    better worldwide box office performance.
+    </p>
 
+    <h3>Null Hypothesis (H₀)</h3>
+    <p>
+    There is no statistically significant relationship between audience ratings 
+    and worldwide box office revenue.
+    </p>
 
-
+    <h3>Alternative Hypothesis (H₁)</h3>
+    <p>
+    There is a statistically significant relationship between audience ratings 
+    and worldwide box office revenue, where higher-rated movies tend to achieve 
+    higher worldwide revenue.
+    </p>
+</section>
 
 
 <!-- Dataset -->
@@ -112,6 +133,9 @@
 
     <ul>
     <li>Kaggle Box Office Dataset (2000–2024)</li>
+    <a href="https://www.kaggle.com/datasets/aditya126/movies-box-office-dataset-2000-2024" target="_blank">
+        <span class="dataset-link">View Dataset on Kaggle</span>
+    </a>
     <li>Approximately 5,000 movie records</li>
     <li>Features included:
         Movie title  |  release year  |  genre  |  rating,
@@ -133,9 +157,10 @@
 <section class="details-section">
     <h2>Technologies</h2>
         <p><ul>
-            <li><b>Programming Language</b>: R</li>
-            <li><b>Libraries</b>: ggplot2 | dplyr | dunn.test</li>
-            <li><b>Statistical Techniques</b>: Exploratory Data Analysis | Shapiro-Wilk Test | Kruskal-Wallis Test | Dunn's Post Hoc Test | Spearman Correlation | Linear Regression</li>
+            <li><strong>Programming Language</strong>: R</li>
+            <li><strong>Libraries</strong>: ggplot2 | dplyr | dunn.test</li>
+            <li><strong>Development Environment:</strong> RStudio</li>
+            <li><strong>Statistical Techniques</strong>: Exploratory Data Analysis | Shapiro-Wilk Test | Kruskal-Wallis Test | Dunn's Post Hoc Test | Spearman Correlation | Linear Regression</li>
         </ul></p>
 </section>
 
@@ -146,11 +171,18 @@
 <!-- Analytical Approach -->
 <section class="details-section">
     <h2>Analytical Approach</h2>
+    <p>
+    This project follows a structured data analytics workflow covering data 
+    preprocessing, descriptive analysis, statistical testing, and predictive 
+    modelling to investigate the relationship between audience ratings and 
+    worldwide box office revenue.
+    </p>
     <div class="analytics-container">
     
         <div class="analytics-card">
             <h3>Data Preprocessing</h3>
-            <p>Prepared raw movie data for statistical analysis and modelling.</p>
+            <p>Prepared raw movie data for statistical analysis and predictive modelling 
+                by improving data quality and creating analysis-ready features.</p>
             <ul>
                 <li>Handled missing values and inconsistent records.</li>
                 <li>Converted revenue and rating fields into suitable numeric formats.</li>
@@ -160,35 +192,39 @@
         </div>
         <div class="analytics-card">
             <h3>Descriptive Analytics</h3>
-            <p>Used to understand movie revenue patterns and rating distributions.</p>
+            <p>Analyzed movie characteristics and revenue patterns to understand trends 
+                between audience ratings and box office performance.</p>
 
             <ul>
-                <li>Data cleaning and preprocessing</li>
-                <li>Revenue distribution analysis</li>
-                <li>Rating category comparison</li>
-                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Revenue distribution analysis.</li>
+                <li>Rating distribution analysis.</li>
+                <li>Comparison of revenue across rating categories.</li>
+                <li>Exploratory Data Analysis (EDA) using visualizations.</li>
             </ul>
         </div>
         <div class="analytics-card">
             <h3>Inferential Analytics</h3>
-            <p>Used statistical tests to validate whether ratings influence revenue.</p>
+            <p>Applied statistical hypothesis testing to evaluate whether differences and 
+                relationships exist between audience ratings and worldwide revenue.</p>
 
             <ul>
-                <li>Shapiro-Wilk normality test</li>
-                <li>Kruskal-Wallis test</li>
-                <li>Dunn's post-hoc analysis</li>
-                <li>Spearman correlation</li>
+                <li>Shapiro-Wilk normality test.</li>
+                <li>Kruskal-Wallis test for comparing rating groups.</li>
+                <li>Dunn's Post Hoc analysis for identifying significant group differences.</li>
+                <li>Spearman correlation analysis to measure the relationship between ratings and revenue.</li>
             </ul>
         </div>
         <div class="analytics-card">
             <h3>Predictive Analytics</h3>
-            <p>Built a statistical model to estimate revenue based on ratings.</p>
+            <p>
+            Developed a regression model to evaluate the ability of audience ratings to 
+            predict worldwide box office revenue.
+            </p>
 
             <ul>
-                <li>Linear Regression Model</li>
-                <li>Train-test split</li>
-                <li>R² evaluation</li>
-                <li>RMSE measurement</li>
+              <li>Built a Simple Linear Regression model using ratings as the predictor variable.</li>
+              <li>Performed train-test split for model evaluation.</li>
+              <li>Evaluated model performance using R² and RMSE metrics.</li>
             </ul>
         </div>
     </div>
@@ -210,7 +246,8 @@
         <div class="dot"></div>
         <div class="content">
         <h4>Data Collection</h4>
-        <p>Gathering movie datasets including ratings, revenue, genres, and other attributes.</p>
+        <p>Collected movie data containing ratings, revenue, genres, release information, 
+        and other attributes from the Kaggle Box Office Dataset.</p>
         </div>
     </div>
 
@@ -218,7 +255,9 @@
         <div class="dot"></div>
         <div class="content">
         <h4>Data Cleaning</h4>
-        <p>Handling missing values, duplicates, incorrect formats, and preparing data for analysis.</p>
+        <p>Cleaned and prepared the dataset by handling missing values, inconsistent 
+        records, duplicate entries, and converting variables into suitable formats 
+        for analysis.</p>
         </div>
     </div>
 
@@ -226,7 +265,8 @@
         <div class="dot"></div>
         <div class="content">
         <h4>Exploratory Analysis</h4>
-        <p>Using visualizations to identify patterns, trends, and relationships in the dataset.</p>
+        <p>Analyzed movie trends, revenue patterns, and rating distributions using 
+        statistical summaries and visualizations.</p>
         </div>
     </div>
 
@@ -234,7 +274,8 @@
         <div class="dot"></div>
         <div class="content">
         <h4>Statistical Testing</h4>
-        <p>Applying hypothesis testing techniques to validate findings.</p>
+        <p>Applied hypothesis testing and correlation analysis to evaluate the 
+        relationship between audience ratings and worldwide revenue.</p>
         </div>
     </div>
 
@@ -242,7 +283,8 @@
         <div class="dot"></div>
         <div class="content">
         <h4>Model Development</h4>
-        <p>Building predictive models and evaluating their performance.</p>
+        <p>Developed a linear regression model to evaluate the predictive capability 
+        of audience ratings on box office revenue.</p>
         </div>
     </div>
 
@@ -250,7 +292,8 @@
         <div class="dot"></div>
         <div class="content">
         <h4>Evaluation</h4>
-        <p>Interpreting results and extracting meaningful insights.</p>
+        <p>Interpreted statistical results and model performance to identify key factors 
+        affecting box office success and highlight limitations of ratings-based prediction.</p>
         </div>
     </div>
     </div>
@@ -297,6 +340,227 @@
 
 
 
+
+<!-- ==========================
+     PROJECT VISUALIZATIONS
+========================== -->
+
+<section class="details-section">
+
+    <h2>Project Visualizations</h2>
+
+    <p class="section-intro">
+        The following visualizations highlight the key findings from the
+        exploratory, inferential, and predictive analysis performed on
+        the movie box office dataset.
+    </p>
+
+
+    <!-- ================= EDA ================= -->
+
+    <h3 class="viz-heading">Exploratory Data Analysis</h3>
+
+
+    <div class="horizontal-scroll">
+
+
+        <div class="image-card">
+
+            <img src="../assets/images/movie-analysis/rating-distribution.png"
+                 alt="Distribution of Movie Ratings">
+
+            <h4>Distribution of Movie Ratings</h4>
+
+            <p>
+                Most movies received medium audience ratings,
+                showing concentration around average scores.
+            </p>
+
+        </div>
+
+
+
+        <div class="image-card">
+
+            <img src="../assets/images/movie-analysis/average-revenue.png"
+                 alt="Average Revenue by Rating">
+
+            <h4>Average Revenue by Rating Category</h4>
+
+            <p>
+                Higher-rated movies generally achieved higher
+                worldwide revenue.
+            </p>
+
+        </div>
+
+
+
+        <div class="image-card">
+
+            <img src="../assets/images/movie-analysis/scatter-plot.png"
+                 alt="Rating vs Revenue">
+
+            <h4>Rating vs Worldwide Revenue</h4>
+
+            <p>
+                Shows a weak positive relationship between
+                audience ratings and revenue.
+            </p>
+
+        </div>
+
+
+
+        <div class="image-card">
+
+            <img src="../assets/images/movie-analysis/Hexbin Density.png"
+                 alt="Hexbin Density">
+
+            <h4>Rating vs Revenue Density</h4>
+
+            <p>
+                Most observations are concentrated around
+                medium ratings and moderate revenue.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ================= Inferential ================= -->
+
+    <h3 class="viz-heading">Inferential Analysis</h3>
+
+
+    <div class="horizontal-scroll">
+
+
+        <div class="result-card">
+
+            <h4>Shapiro–Wilk Test</h4>
+
+            <h2>W = 0.538</h2>
+
+            <p>
+                p &lt; 2.2 × 10⁻¹⁶
+            </p>
+
+            <span>
+                Revenue is not normally distributed.
+                Non-parametric tests were applied.
+            </span>
+
+        </div>
+
+
+
+        <div class="result-card">
+
+            <h4>Spearman Correlation</h4>
+
+            <h2>ρ = 0.1405</h2>
+
+            <p>
+                p &lt; 2.2 × 10⁻¹⁶
+            </p>
+
+            <span>
+                Weak but significant positive relationship
+                between ratings and revenue.
+            </span>
+
+        </div>
+
+
+
+        <div class="result-card">
+
+            <h4>Kruskal–Wallis Test</h4>
+
+            <h2>χ² = 100.49</h2>
+
+            <p>
+                p &lt; 0.001
+            </p>
+
+            <span>
+                Significant revenue differences exist
+                between rating groups.
+            </span>
+
+        </div>
+
+
+
+        <div class="result-card">
+
+            <h4>Dunn's Post Hoc Test</h4>
+
+            <ul>
+                <li>Low vs Medium ✓</li>
+                <li>Medium vs High ✓</li>
+                <li>Low vs High ✓</li>
+            </ul>
+
+            <span>
+                All rating groups differ significantly.
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ================= Predictive ================= -->
+
+
+    <h3 class="viz-heading">Predictive Analysis</h3>
+
+
+    <div class="horizontal-scroll">
+
+
+        <div class="result-card">
+
+            <h4>Linear Regression Model</h4>
+
+            <h2>LogRevenue = 16.44 + 0.218 × Rating</h2>
+
+            <span>
+                Ratings have a positive effect on revenue,
+                but prediction capability is limited.
+            </span>
+
+        </div>
+
+
+
+        <div class="result-card">
+
+            <h4>Model Evaluation</h4>
+
+            <h2>R² = 0.034</h2>
+
+            <h2>RMSE = 1.14</h2>
+
+            <span>
+                Ratings explain only approximately 3.4%
+                of revenue variation.
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
 <section class="details-section">
 <div class="results-section">
 
@@ -304,37 +568,35 @@
     <h3>Key Findings</h3>
 
     <ul>
-      <li>Movies with higher audience ratings showed a tendency toward higher worldwide revenue, although the relationship was relatively weak.</li>
-      <li>Kruskal-Wallis and Dunn's tests confirmed significant differences between rating groups.</li>
-      <li>Spearman correlation showed a positive relationship between ratings and revenue.</li>
-      <li>Linear regression showed ratings influence revenue but alone are not sufficient for accurate prediction.</li>
+        <li>
+            Movies with higher audience ratings generally showed higher worldwide 
+            revenue trends; however, the relationship was relatively weak.
+        </li>
+
+        <li>
+            Kruskal-Wallis and Dunn's Post Hoc tests identified statistically 
+            significant differences between movie rating groups, (p < 0.001), leading to the rejection
+            of the null hypothesis and indicating that audience ratings are associated
+            with differences in worldwide revenue.
+</li>
+        </li>
+
+        <li>
+            Spearman correlation showed a positive but weak relationship between 
+            audience ratings and worldwide revenue (ρ = 0.14), indicating that 
+            higher ratings alone do not strongly determine box office success.
+        </li>
+
+        <li>
+            The linear regression model achieved an R² value of 0.034, meaning 
+            audience ratings explained only approximately 3.4% of revenue variation. 
+            This highlights that other factors such as marketing investment, 
+            production budget, franchise popularity, cast influence, and audience 
+            reach may play a larger role in determining box office performance.
+        </li>
     </ul>
   </div>
 
-
-  <div class="technical-results">
-
-    <h3>Technical Results</h3>
-
-    <div class="result-card">
-      <h4>Kruskal-Wallis Test</h4>
-      <p>χ² = 100.49</p>
-      <span>p &lt; 0.001</span>
-    </div>
-
-    <div class="result-card">
-      <h4>Spearman Correlation</h4>
-      <p>ρ = 0.14</p>
-      <span>Positive Relationship</span>
-    </div>
-
-    <div class="result-card">
-      <h4>Regression Model</h4>
-      <p>R² = 0.034</p>
-      <span>RMSE = 1.14</span>
-    </div>
-
-  </div>
 
 </div>
 </section>
@@ -345,63 +607,49 @@
 
 
 
-<section class="details-section">
-    <h2>Project Visualizations</h2>
-
-    <div class="visualization-gallery">
-        <img src="images/revenue-rating-boxplot.png" alt="Revenue vs Rating Boxplot">
-        <img src="images/hit-flop-chart.png" alt="Hit vs Flop Chart">
-        <img src="images/regression-chart.png" alt="Regression Analysis Chart">
-    </div>
-</section>
 
 
 
 <section class="details-section">
 
-<h2>
-Limitations & Future Improvements
-</h2>
+<h2>Limitations & Future Improvements</h2>
 
+<p>
+While audience ratings show a positive relationship with worldwide box office 
+revenue, this study has several limitations that affect predictive accuracy.
+</p>
 
 <ul>
 
-<li>
-Movie ratings alone cannot accurately predict box office revenue.
-</li>
+    <li>
+        <strong>Limited Predictive Variables:</strong>
+        Audience ratings alone cannot accurately predict box office revenue,
+        as commercial success depends on multiple factors beyond audience
+        reception.
+    </li>
 
-<li>
-Future models could include additional variables such as:
-budget, marketing expenditure, actors, directors, genre,
-and audience demographics.
-</li>
+    <li>
+        <strong>Additional Features:</strong>
+        Future models could incorporate variables such as production budget,
+        marketing expenditure, cast popularity, director influence, genre,
+        franchise information, release timing, and audience engagement metrics.
+    </li>
 
-<li>
-Advanced machine learning models could be explored for improved
-revenue prediction.
-</li>
+    <li>
+        <strong>Data Improvements:</strong>
+        Future studies could consider inflation-adjusted revenue, regional
+        market differences, and additional movie performance indicators.
+    </li>
+
+    <li>
+        <strong>Advanced Modelling:</strong>
+        Machine learning approaches such as Random Forest, Gradient Boosting,
+        XGBoost, or other ensemble methods could be explored to improve
+        revenue prediction accuracy.
+    </li>
 
 </ul>
 
-
-</section>
-
-<section class="details-section">
-    <div class="documentation">
-
-    <h3>Presentation & Documentation</h3>
-
-    <div class="doc-buttons">
-        <a href="assets/movie-analysis-presentation.pptx" class="doc-btn" target="_blank">
-        View Presentation (.pptx) →
-        </a>
-
-        <a href="assets/movie-analysis-report.pdf" class="doc-btn" target="_blank">
-        View Report (.pdf) →
-        </a>
-    </div>
-
-    </div>
 </section>
 
 
@@ -414,7 +662,7 @@ revenue prediction.
     statistical analysis, visualizations, and modelling process.
     </p>
 
-  <a href="YOUR_GITHUB_LINK" class="navy-btn" target="_blank">
+  <a href="https://github.com/Ishoda/movie-box-office-analytics.git" class="navy-btn" target="_blank">
     View Repository →
   </a>
 </div>
@@ -429,7 +677,7 @@ revenue prediction.
 <footer>
 
 <p>
-© 2026 Ishoda Umayangana
+© 2026 Ishoda Moderage
 </p>
 
 </footer>

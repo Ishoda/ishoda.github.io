@@ -15,7 +15,7 @@
 
 
 <body>
-<!-- HEADER / NAV -->
+    <!-- HEADER / NAV -->
   <header class="site-header">
     <div class="container nav-inner">
       <a href="#home" class="brand">
@@ -29,13 +29,13 @@
         <span></span><span></span><span></span>
       </button>
       <nav class="nav" id="siteNav" aria-label="Primary">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#certifications" class="nav-link">Certifications</a>
-        <a href="#resume" class="nav-link">Resume</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#resume" class="nav-link">Resume</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
@@ -64,12 +64,18 @@
 <section>
     <h2>Project Overview</h2>
 
-    <p>This project focuses on designing and implementing a Retail Analytics
-    Data Warehouse to integrate transactional data from multiple sources.
-
-    The system enables business users to analyze sales performance,
-    profitability, customer behaviour and store performance through
-    Business Intelligence tools.</p>
+    <p>This project involved designing and implementing a Retail Analytics 
+        Data Warehouse to integrate transactional data from multiple sources 
+        and enable advanced business analysis.
+        <ul>
+        The solution helps organizations analyze:
+            <li>Sales performance</li>
+            <li>Profitability trends</li>
+            <li>Customer behaviour</li>
+            <li>Product performance</li>
+            <li>Store-level insights <br>through a complete Business Intelligence 
+        workflow using SQL Server, SSIS, SSAS, and Power BI.</p></li>
+        </ul>
 </section>
 
 
@@ -80,11 +86,11 @@
     <h2>Technologies</h2>
     <div class="tags">
         <p><ul>
-            <li>SQL Server</li>
-            <li>SSIS</li>
-            <li>SSAS</li>
+            <li>Microsoft SQL Server</li>
+            <li>SQL Server Integration Services (SSIS)</li>
+            <li>SQL Server Analysis Services (SSAS)</li>
             <li>Power BI</li>
-            <li>Excel</li>
+            <li>Excel / CSV Data Sources</li>
         </ul></p>
     </div>
 </section>
@@ -95,14 +101,15 @@
 
 <section>
     <h2>Problem Statement</h2>
-    <p>Retail organizations often store data in different systems such as sales,
-    customers, products and stores.
+    <p>Retail organizations often maintain sales, customer, product
+         and store information across multiple systems. This makes 
+         it difficult to perform centralized analysis and generate 
+         meaningful business insights.<br>
 
-    Without a centralized analytical system, extracting business insights
-    becomes difficult.
-
-    This project solves this problem by creating a Data Warehouse and BI
-    reporting solution.</p>
+        This project addresses the problem by 
+        developing a centralized Data Warehouse and Business 
+        Intelligence reporting solution that supports efficient 
+        analytical processing and decision-making.</p>
 </section>
 
 
@@ -121,8 +128,12 @@
                 <div class="content">
                     <h4>Source Systems</h4>
                     <p>
-                    Collected transactional data from multiple sources including
-                    sales, customers, products, stores, and Excel/CSV files.
+                    Collected transactional data from multiple sources, including:<br>
+                        <span class="tab">Sales records</span><br>
+                        <span class="tab">Customer information</span><br>
+                        <span class="tab">Product details</span><br>
+                        <span class="tab">Store data</span><br>
+                        <span class="tab">Excel and CSV files</span>
                     </p>
                 </div>
             </div>
@@ -132,8 +143,11 @@
                 <div class="content">
                     <h4>Staging Area</h4>
                     <p>
-                    Stored raw data temporarily for validation, cleaning,
-                    and preparation before loading into the warehouse.
+                    Created a staging environment to temporarily store raw data before warehouse loading. Performed:<br>
+                        <span class="tab">Data validation</span><br>
+                        <span class="tab">Data cleaning</span><br>
+                        <span class="tab">Data preparation</span><br>
+                        <span class="tab">Data quality checks</span>
                     </p>
                 </div>
             </div>
@@ -142,9 +156,22 @@
                 <div class="dot"></div>
                 <div class="content">
                     <h4>ETL Process (SSIS)</h4>
-                    <p>
-                    Extracted, transformed, and loaded data using SSIS packages.
-                    Applied data cleaning, transformations, and business rules.
+                    <p>Developed SSIS ETL workflows to automate data movement between source systems and the data warehouse.<br>
+                        <strong>Extract </strong><br>Retrieved data from <br>
+                        <span class="tab">SQL databases</span><br>
+                        <span class="tab">CSV files</span><br>
+                        <span class="tab">Excel sources</span><br>
+
+                        <strong>Transform</strong><br>
+                        Applied:<br>
+                        <span class="tab">Data cleaning</span><br>
+                        <span class="tab">Duplicate removal</span><br>
+                        <span class="tab">Data validation</span><br>
+                        <span class="tab">Format standardization</span><br>
+                        <span class="tab">Business rules</span><br>
+
+                        <strong>Load</strong><br>
+                        Loaded processed data into warehouse tables using SSIS packages.
                     </p>
                 </div>
             </div>
@@ -152,32 +179,63 @@
             <div class="process-item">
                 <div class="dot"></div>
                 <div class="content">
-                    <h4>Data Warehouse</h4>
+                    <h4>Data Warehouse Design</h4>
                     <p>
-                    Designed a star schema with FactSales and dimension tables
-                    to support efficient analytical queries.
+                        <strong>Star Schema</strong><br>
+                        Designed a dimensional data model using a star schema architecture.<br>
+
+                        <strong>Fact Table</strong><br>
+                        <span class="tab">FactSales</span><br>
+                        <span class="tab">Measures:</span><br>
+                        <span class="tab">Sales Amount</span><br>
+                        <span class="tab">Quantity</span><br>
+                        <span class="tab">Discount</span><br>
+                        <span class="tab">Profit</span><br>
+
+                        <strong>Dimension Tables</strong><br>
+                        <span class="tab">DimCustomer</span><br>
+                        <span class="tab">DimProduct</span><br>
+                        <span class="tab">DimStore</span><br>
+                        <span class="tab">DimDate</span><br>
+
+                        This structure enables efficient analytical queries and reporting.
                     </p>
                 </div>
             </div>
 
+
             <div class="process-item">
                 <div class="dot"></div>
                 <div class="content">
-                    <h4>SSAS Cube</h4>
+                    <h4>SSAS OLAP Cube</h4>
                     <p>
-                    Developed an OLAP cube to enable multidimensional analysis
-                    using operations such as drill-down and slice-and-dice.
+                        Developed an OLAP cube to support multidimensional analysis using:<br>
+                        <span class="tab">Drill-down</span><br>
+                        <span class="tab">Roll-up</span><br>
+                        <span class="tab">Slice and Dice</span><br>
+                        Users can analyze business data from different perspectives such as:
+                        <br>
+                        <span class="tab">Time</span><br>
+                        <span class="tab">Product</span><br>
+                        <span class="tab">Customer</span><br>
+                        <span class="tab">Store</span>
                     </p>
                 </div>
             </div>
-            
+
+
             <div class="process-item">
                 <div class="dot"></div>
                 <div class="content">
                     <h4>Power BI Dashboard</h4>
                     <p>
-                    Connected the warehouse with Power BI to visualize sales,
-                    profit trends, and store performance insights.
+                        Created interactive dashboards to visualize:<br>
+                        <span class="tab">Sales trends</span><br>
+                        <span class="tab">Profit analysis</span><br>
+                        <span class="tab">Store performance</span><br>
+                        <span class="tab">Business KPIs</span><br>
+
+                        The dashboards transform complex warehouse data into meaningful visual insights.
                     </p>
                 </div>
             </div>
@@ -188,12 +246,44 @@
 
 
 
+<section class="project-gallery">
+
+    <h3>Project Screenshots</h3>
+
+    <div class="image-scroll">
+
+        <div class="image-card">
+            <img src="../assets/images/retail-dw/architecture diagram.png" alt="SSIS Control Flow">
+            <p>SSIS ETL Control Flow</p>
+        </div>
+
+        <div class="image-card">
+            <img src="../assets/images/retail-dw/star-schema.png" alt="Star Schema Design">
+            <p>Data Warehouse Star Schema</p>
+        </div>
+
+        <div class="image-card">
+            <img src="../assets/images/retail-dw/load-dw.png" alt="SSAS OLAP Cube">
+            <p>SSAS OLAP Cube</p>
+        </div>
+
+        <div class="image-card">
+            <img src="../assets/images/retail-dw/powerbi 1.png" alt="Power BI Dashboard">
+            <p>Power BI Dashboard</p>
+        </div>
+        
+        <div class="image-card">
+            <img src="../assets/images/retail-dw/powerbi 2.png" alt="Power BI Dashboard">
+            <p>Power BI Dashboard</p>
+        </div>
+    </div>
+
+</section>
 
 
 
 
-
-<section>
+<!-- <section>
     <h2>Data Warehouse Design</h2>
     <div class="card-container">
         <div class="card">
@@ -218,12 +308,12 @@
     </div>
     <img src="images/star-schema.png" class="main-image">
 
-</section>
+</section> -->
 
 
 
 
-<section>
+<!-- <section>
 
     <h2>ETL Development</h2>
     <div class="etl-box">
@@ -244,12 +334,12 @@
         </div>
     </div>
     <img src="images/ssis.png" class="main-image">
-</section>
+</section> -->
 
 
 
 
-<section>
+<!-- <section>
     <h2>Business Intelligence Analysis</h2>
     <div class="feature">
         <div>
@@ -265,7 +355,7 @@
         </div>
     </div>
     <img src="images/powerbi-dashboard.png" class="dashboard">
-</section>
+</section> -->
 
 
 
@@ -276,7 +366,7 @@
     <h2>Project Outcomes</h2>
     <ul>
         <li>
-            Successfully developed a centralized retail data warehouse using a star schema architecture.
+            Developed a centralized retail data warehouse using dimensional modelling principles.
         </li>
 
         <li>
@@ -339,23 +429,11 @@ Power BI Dashboard-->
 
     <h3>Business Intelligence Development</h3>
     <p>
-        Learned how OLAP cubes and Power BI dashboards can transform complex
-        datasets into meaningful business insights.
+        Developed an understanding of how ETL pipelines, OLAP cubes
+         and dashboards work together to support data-driven decision-making.
     </p>
 </section>
 
-
-
-
-
-<section>
-    <h2>Documentation</h2>
-    <div class="buttons">
-        <a href="#" >View Report (.pdf)</a>
-
-        <a href="#">View Presentation (.pptx)</a>
-    </div>
-</section>
 
 
 
@@ -373,7 +451,7 @@ Power BI Dashboard-->
 
 
 <footer>
-    © 2026 Ishoda Umayangana
+    © 2026 Ishoda Moderage
 </footer>
 
 
