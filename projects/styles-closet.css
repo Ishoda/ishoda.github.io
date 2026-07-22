@@ -282,6 +282,7 @@
 
 .gallery img {
   width: 100%;
+  
 
   border-radius: 25px;
 
@@ -294,6 +295,16 @@
   transform: translateY(-8px);
 }
 
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
 /* ================= SECTION BACKGROUND ================= */
 
 .alt {
