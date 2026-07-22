@@ -14,33 +14,28 @@
   <body>
     <!-- HEADER / NAV -->
     <header class="site-header">
-      <div class="container nav-inner">
-        <a href="#home" class="brand">
-          <span class="brand-mark">IU</span>
-          <span class="brand-text">
-            <strong>Ishoda Umayangana</strong>
-            <em>Data Science Undergraduate</em>
-          </span>
-        </a>
-        <button
-          class="nav-toggle"
-          id="navToggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav" id="siteNav" aria-label="Primary">
-          <a href="#home" class="nav-link">Home</a>
-          <a href="#about" class="nav-link">About</a>
-          <a href="#skills" class="nav-link">Skills</a>
-          <a href="#projects" class="nav-link">Projects</a>
-          <a href="#certifications" class="nav-link">Certifications</a>
-          <a href="#resume" class="nav-link">Resume</a>
-          <a href="#contact" class="nav-link">Contact</a>
-        </nav>
-      </div>
-    </header>
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">IU</span>
+        <span class="brand-text">
+          <strong>Ishoda Umayangana</strong>
+          <em>Data Science Undergraduate</em>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../index.html#about" class="nav-link">About</a>
+        <a href="../index.html#skills" class="nav-link">Skills</a>
+        <a href="../index.html#projects" class="nav-link">Projects</a>
+        <a href="../index.html#certifications" class="nav-link">Certifications</a>
+        <a href="../index.html#resume" class="nav-link">Resume</a>
+        <a href="../index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
     <!-- Navigation -->
 
     <nav>
@@ -52,7 +47,7 @@
     <!-- Project Header -->
 
     <section class="project-header">
-      <h1>UniSpace Hub - Smart Campus Operations Hub</h1>
+      <h1>UniSpace Hub - Smart Campus Operations Platform</h1>
 
       <p>
         A full-stack university management platform developed to digitize
@@ -67,16 +62,16 @@
       <h2>Project Overview</h2>
 
       <p>
-        During my third year at SLIIT, I contributed to the development of
-        <strong>UniSpace Hub</strong>, a full-stack web application designed to
-        modernize university facility management and operational workflows. The
-        main objective of this project was to build a centralized platform that
-        enables users to manage campus resources, submit facility booking
-        requests, report maintenance issues, and track service progress through
-        a structured workflow. The system was developed using a modern
-        full-stack architecture with a <strong>React-based frontend</strong> and
-        a <strong>Spring Boot REST API backend</strong>, following RESTful
-        development practices and layered architecture principles.
+       UniSpace Hub is a full-stack Smart Campus Operations 
+       Platform developed to digitize university facility management and maintenance workflows.<br />
+
+      The system provides a centralized platform for managing campus resources, 
+      facility booking requests, maintenance incidents, ticket tracking
+      and operational communication. The application follows a modern 
+      full-stack architecture with a React-based frontend, Spring Boot REST API backend and cloud-hosted database.<br />
+      
+      The project was focusing on REST API development, frontend-backend integration, 
+      database management, security practices and scalable software architecture.
       </p>
     </section>
 
@@ -86,13 +81,21 @@
       <h2>Business Problem</h2>
 
       <p>
-        Traditional facility management processes often rely on manual booking,
-        paper-based maintenance requests, and disconnected communication
-        methods. This creates difficulties in tracking facility availability,
-        managing service requests, monitoring issue resolution, and maintaining
-        operational transparency. UniSpace Hub was developed to provide a
-        centralized digital platform to automate facility booking and
-        maintenance workflows.
+        Traditional university facility management processes often depend on manual booking 
+        systems, paper-based maintenance reporting, and disconnected communication channels.
+
+        <br>These approaches create challenges in:
+        <ul>
+          <li>Tracking facility availability</li>
+          <li>Managing booking requests</li>
+          <li>Monitoring maintenance issues</li>
+          <li>Assigning technicians</li>
+          <li>Tracking service progress</li>
+          <li>Maintaining operational visibility</li>
+        </ul>
+
+        UniSpace Hub addresses these challenges by providing a 
+        centralized digital platform for facility operations and maintenance management.
       </p>
     </section>
 
@@ -141,36 +144,37 @@
     <!-- My Contribution -->
 
     <section class="details-section">
-      <h2>My Contributions</h2>
+      <h2>Individual Contribution - Maintenance & Incident Ticket Management</h2>
+
+
 
       <div class="analytics-container">
         <div class="analytics-card">
-          <h3>Maintenance & Incident Ticket Management</h3>
-
+          <h3>Key Implementations:</h3>
           <ul>
             <li>
-              Developed the complete ticket management workflow from ticket
-              creation to resolution.
+              Designed and developed the complete ticket lifecycle: OPEN → IN_PROGRESS → RESOLVED → CLOSED (with REJECTED status).
             </li>
 
             <li>
-              Implemented ticket lifecycle management with statuses:
-              <br />
-              OPEN → IN_PROGRESS → RESOLVED → CLOSED
+              Built RESTful APIs for ticket creation, retrieval, status updates, technician assignment/claiming, comments and attachments.
             </li>
 
             <li>
-              Enabled users to submit incident reports with descriptions,
-              categories, priorities, and supporting attachments.
+              Implemented ticket creation with categories, priorities, descriptions, facility linking, and image evidence uploads.
             </li>
 
             <li>
-              Developed functionality for technicians and administrators to
-              claim tickets, update statuses, and add resolution notes.
+              Developed technician workflows including ticket claiming, status management and resolution notes.
             </li>
 
             <li>
               Implemented ticket comments and attachment management features.
+            </li>
+            
+            <li>
+              Designed and developed a real-time SLA dashboard to help administrators 
+              and technicians prioritize maintenance work effectively.
             </li>
           </ul>
         </div>
@@ -180,8 +184,8 @@
 
           <ul>
             <li>
-              Developed RESTful APIs using
-              <strong>Spring Boot and Java</strong>.
+              Implemented layered architecture (Controller → Service → Repository)
+              <strong>Spring Boot and Spring Data JPA</strong>.
             </li>
 
             <li>
@@ -194,7 +198,6 @@
               communication.
             </li>
 
-            <li>Integrated database operations using Spring Data JPA.</li>
           </ul>
         </div>
 
@@ -244,34 +247,7 @@
           </ul>
         </div>
 
-        <div class="card">
-          <h3>SLA Dashboard Development</h3>
-
-          <ul>
-            <li>
-              Developed an SLA monitoring dashboard for tracking maintenance
-              ticket performance.
-            </li>
-
-            <li>
-              Implemented service-level timers to measure:
-              <br />
-              Time to First Response
-              <br />
-              Time to Resolution
-            </li>
-
-            <li>
-              Designed logic to identify tickets approaching SLA deadlines or
-              exceeding resolution time limits.
-            </li>
-
-            <li>
-              Helped administrators monitor technician performance and improve
-              maintenance efficiency.
-            </li>
-          </ul>
-        </div>
+        
       </div>
     </section>
 
@@ -346,40 +322,7 @@
       </div>
     </section>
 
-    <!-- Database -->
-
-    <section class="details-section">
-      <h2>Database & Data Management</h2>
-
-      <ul>
-        <li>
-          Designed database structures for facilities, bookings, tickets, users,
-          comments, and notifications.
-        </li>
-
-        <li>
-          Implemented CRUD operations with efficient data retrieval through REST
-          APIs.
-        </li>
-
-        <li>
-          Managed dynamic facility and ticket information using structured
-          database models.
-        </li>
-
-        <li>
-          The collected operational data can be extended for future analytics
-          such as facility utilization analysis, booking trends, and maintenance
-          performance dashboards.
-        </li>
-
-        <li>
-          The stored operational data provides opportunities for future
-          analytics such as facility utilization prediction, maintenance trend
-          analysis, and service performance monitoring.
-        </li>
-      </ul>
-    </section>
+    
 
     <!-- API Development -->
 
@@ -419,8 +362,10 @@
           REST API | Hibernate/ JPA
         </li>
         <li>
-          <strong> Database & Cloud: </strong> MySQL / MS SQL Server | Aiven
-          Cloud Database | Cloudinary
+          <strong> Database: </strong> MySQL (Aiven Cloud)
+        </li>
+        <li>
+          <strong> Cloud Storage: </strong> Cloudinary
         </li>
         <li>
           <strong> Development Tools: </strong> Git & GitHub | Postman | GitHub
