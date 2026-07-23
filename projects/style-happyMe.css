@@ -222,9 +222,100 @@ footer {
 
 
 
+.color-palette {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ==========================
+   CRUD OPERATIONS
+========================== */
+
+.crud-list {
+
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
 
 
+.crud-item {
 
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+
+  overflow: hidden;
+
+}
+
+
+.crud-title {
+
+  background: none;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+
+}
+
+
+.crud-title h3 {
+
+  color: var(--navy);
+  margin: 0;
+  font-size: 20px;
+
+}
+
+
+.crud-content {
+
+  padding: 10px;
+
+}
+
+
+.crud-content p {
+
+  margin: 0;
+  color: var(--slate);
+  line-height: 1.3;
+
+}
+
+
+/* Mobile */
+
+@media(max-width:700px){
+
+  .crud-item {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .crud-title {
+
+    padding: 18px;
+
+  }
+
+
+  .crud-content {
+
+    padding: 20px;
+
+  }
+
+}
 
 
 

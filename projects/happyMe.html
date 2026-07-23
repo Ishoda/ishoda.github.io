@@ -73,20 +73,6 @@
 </section>
 
 
-<section class="technologies">
-    <h2>Technologies</h2>
-    <div class="tags">
-        <p><ul>
-            <li>Kotlin</li>
-            <li>Android Studio</li>
-            <li>XML</li>
-            <li>SharedPreferences</li>
-            <li>Fragments</li>
-            <li>PDF Generation</li>
-            <li>Notifications</li>
-        </ul></p>
-    </div>
-</section>
 
 
 <!-- ================= OVERVIEW ================= -->
@@ -96,10 +82,16 @@
         <h2>Project Overview</h2>
 
         <p>
-          HappyMe is a wellness-focused mobile application developed to help
-          users maintain positive daily habits. The application combines habit
-          management, emotional wellness tracking, hydration monitoring and
-          personal progress reporting into one simple platform.
+          Maintaining healthy habits often requires using multiple applications 
+          to track routines, hydration, and emotional well-being. HappyMe brings 
+          these essential wellness activities together into a single mobile application 
+          that provides a seamless and personalized user experience.<br>
+
+          The application enables users to manage daily habits, record moods, 
+          monitor water intake, and review their overall progress while maintaining 
+          all personal data locally on the device. By combining a clean interface with 
+          motivational content and personalized insights, HappyMe helps users stay focused 
+          on long-term lifestyle improvements.
         </p>
       </div>
     </section>
@@ -109,10 +101,27 @@
 <section>
     <h2>Problem Statement</h2>
     <p>
-          HappyMe is a wellness-focused mobile application developed to help
-          users maintain positive daily habits. The application combines habit
-          management, emotional wellness tracking, hydration monitoring and
-          personal progress reporting into one simple platform.
+      Many people struggle to maintain healthy routines because their 
+      wellness activities are scattered across different applications or not 
+      tracked at all. This makes it difficult to stay consistent and understand 
+      personal progress over time.<br>
+
+      HappyMe solves this problem by providing an all-in-one wellness 
+      platform where users can manage habits, monitor emotional well-being, track hydration
+       and review daily progress from a single application.
+        </p>
+</section>
+
+
+<section>
+    <h2>Solution</h2>
+    <p>
+      HappyMe integrates habit management, mood tracking, hydration monitoring
+       and progress reporting into one centralized Android application.
+
+      The app provides personalized greetings, motivational quotes,
+       visual progress indicators, reminder notifications and detailed reports,
+        creating an engaging experience that encourages users to develop healthier daily routines.
         </p>
 </section>
 
@@ -121,56 +130,102 @@
 
 <!-- ================= FEATURES ================= -->
 <section>
-    <h2>Main Features</h2>
+    <h2>Key Features</h2>
 
     <h3>Home Dashboard</h3>
 
             <p>
-              Provides daily habit overview, motivational quotes, water progress
-              and a 7-day mood summary chart.
+              The home screen provides an overview of the user's daily wellness activities, including:
+              <ul>
+                <li>Daily habit checklist</li>
+                <li>Motivational quotes</li>
+                <li>Water intake progress</li>
+                <li>Seven-day mood summary chart</li>
+                <li>Personalized greeting</li>
+                <li>Completed habits automatically removed from the active list to improve focus</li>
+              </ul>
+            </p>
             </p>
 
     <h3>Routine Management</h3>
 
             <p>
-              Allows users to add, update and track habits. Completed habits are
-              separated from pending tasks.
+              Users can manage their daily routines through a dedicated habit management system.<br>
+              Features include:
+
+              <ul>
+                <li>Add new habits</li>
+                <li>Edit existing habits</li>
+                <li>Delete habits</li>
+                <li>Mark habits as completed</li>
+                <li>Habit history</li>
+                <li>PDF progress report generation</li>
+                <li>Personalized onboarding for first-time users</li>
+              </ul>
+              <br>Completed habits are automatically moved below pending habits to improve usability.
             </p>
-
-    <h3>Data Warehouse Design</h3>
-    <p>
-        Applied dimensional modelling concepts by designing a star schema
-        with fact and dimension tables for efficient analytical processing.
-    </p>
-
-    <h3>Business Intelligence Development</h3>
-    <p>
-        Developed an understanding of how ETL pipelines, OLAP cubes
-         and dashboards work together to support data-driven decision-making.
-    </p>
+            
 
     <h3>Mind Tracking</h3>  
     <p>
-      Users can record moods, write reflections and review emotional
-      history.
+      The Mind section focuses on emotional well-being by allowing users to:<br>
+      <ul>
+        <li>Record daily moods</li>
+        <li>Write personal reflections</li>
+        <li>Review mood history</li>
+        <li>Generate PDF mood reports</li>
+        <li>Visualize emotional patterns over time</li>
+      </ul>
     </p>
     <h3>Fuel Tracker</h3>
     <p>
-      Tracks daily water intake with reminders and automatic daily reset
-      functionality.
+      The Fuel page encourages healthy hydration habits through:<br>
+      <ul>
+        <li>Interactive eight-cup water tracker</li>
+        <li>Add or remove water intake</li>
+        <li>Daily hydration goal monitoring</li>
+        <li>Reminder notifications</li>
+        <li>Automatic reset at midnight</li>
+      </ul>
     </p>
     <h3>MeTime Profile</h3>
-    <p>
-      Displays statistics, streaks, settings, theme customization and
-      preferences.
+    <p>The profile section allows users to:<br>
+      <ul>
+        <li>View completed habit statistics</li>
+        <li>Track daily streaks</li>
+        <li>Manage preferences</li>
+        <li>Switch between Light and Dark Mode</li>
+        <li>View history</li>
+        <li>Log out securely</li>
+      </ul>
     </p>
 </section>
 
 
 
+    </p>
+</section>
+
+
+
+<section class="technologies">
+    <h2>Technologies</h2>
+    <div class="tags">
+        <p><ul>
+            <li><strong>Languages & UI : </strong> Kotlin  |  XML</li>
+            <li><strong>Architecture : </strong> MVVM Architecture  |  Repository Pattern</li>
+            <li><strong>Data Storage : </strong> Room Database  |  SharedPreferences</li>
+            <li><strong>Asynchronous Programming : </strong> Kotlin Coroutines  |  Kotlin Flow</li>
+            <li><strong>Development Tools : </strong> Android Studio</li>
+            <li><strong>Other : </strong> PDF Generation  |  Notifications  |  Dark Mode</li>
+        </ul></p>
+    </div>
+</section>
+
+
 <!-- ================= WORKFLOW ================= -->
 <section class="details-section">
-    <h2>Application Workflow</h2>
+  <h2>Application Workflow</h2>
     <div class="timeline">
         <div class="process-timeline">
             <div class="process-item">
@@ -184,7 +239,7 @@
             <div class="process-item">
                 <div class="dot"></div>
                 <div class="content">
-                    <h4>Select Habits</h4>
+                    <h4>Personalized habit selection</h4>
                     
                 </div>
             </div>
@@ -192,7 +247,7 @@
             <div class="process-item">
                 <div class="dot"></div>
                 <div class="content">
-                    <h4>Daily Tracking</h4>
+                    <h4>Daily habit tracking</h4>
                     
                 </div>
             </div>
@@ -200,7 +255,7 @@
             <div class="process-item">
                 <div class="dot"></div>
                 <div class="content">
-                    <h4>Mood & Water Monitoring</h4>
+                    <h4>Mood recording</h4>
                     
                 </div>
             </div>
@@ -209,7 +264,31 @@
             <div class="process-item">
                 <div class="dot"></div>
                 <div class="content">
-                    <h4>Progress Reporting</h4>
+                    <h4>Water intake monitoring</h4>
+                    
+                </div>
+            </div>
+            
+            
+            <div class="process-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <h4>Progress visualization</h4>
+                    
+                </div>
+            </div>
+            
+            <div class="process-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <h4>PDF report generation</h4>
+                    
+                </div>
+            </div>
+            <div class="process-item">
+                <div class="dot"></div>
+                <div class="content">
+                    <h4>Continuous wellness improvement</h4>
                     
                 </div>
             </div>
@@ -225,51 +304,170 @@
 <section>
     <h2>Application Architecture</h2>
     <p>
-          The application follows a single Activity architecture with multiple
-            Fragments for modular design.<br>
+          HappyMe follows a Single Activity Architecture 
+          with multiple Fragments, allowing each feature 
+          to remain modular while providing a consistent user experien<br>
+        <ul>
+          MainActivity
+        
+          <li>Home Fragment</li>
+          <li>Routine Fragment</li>
+          <li>Mind Fragment</li>
+          <li>Fuel Fragment</li>
+          <li>MeTime Fragment</li>
+        </ul>
 
-MainActivity<br>
-
- ├── Home Fragment<br>
- ├── Routine Fragment<br>
- ├── Mind Fragment<br>
- ├── Fuel Fragment<br>
- └── MeTime Fragment<br>
+        
+        The application follows the MVVM (Model–View–ViewModel) 
+        architectural pattern with a Repository Layer, ensuring a 
+        clear separation between the user interface, business logic
+         and data management.
         </p>
 </section>
 
 
 <section>
-    <h2>Data Persistence - SharedPreferences</h2>
+    <h2>Data Management</h2>
+
+    <p>HappyMe combines <strong>Room Database</strong> and <strong>SharedPreferences</strong> for efficient local data persistence.</p>
+    <h3>Room Database</h3>
+          <ul>
+            Stores structured application data including:
+            <li>User profiles</li>
+            <li></li>Habits</li>
+            <li>Habit completion history</li>
+            <li>Mood entries</li>
+            <li>Hydration records</li>
+            Room entities are connected through relationships and foreign keys, 
+            while Kotlin Coroutines perform database operations on background threads 
+            to maintain smooth application performance.<br>
+            Kotlin Flow provides real-time updates between the database and the user interface.
+          </ul>
+    <h3>SharedPreferences</h3>
     <p>
-            Local storage is used to maintain user preferences and application
-            progress even after closing the app.
+            Used to store lightweight configuration data, including:
           </p>
 
           <ul>
-            <li>User profile information</li>
-            <li>Habit selections</li>
-            <li>Mood history</li>
-            <li>Water intake records</li>
             <li>Theme preferences</li>
-            <li>Completed habit history</li>
+            <li>User settings</li>
+            <li>Reminder preferences</li>
+            <li>Last selected options</li>
+            <li>Basic application configuration</li>
           </ul>
 </section>
 
+
+<!-- CRUD OPERATIONS -->
+
+<section class="section alt">
+
+  <div class="container">
+
+    <h2>
+      CRUD Operations
+    </h2>
+
+    <p>
+      HappyMe implements complete CRUD functionality to manage user data
+      including habits, mood entries, hydration records, and preferences.
+    </p>
+
+
+    <div class="crud-list">
+
+
+      <div class="crud-item">
+
+        <div class="crud-title">
+          <h3>Create</h3>
+        </div>
+
+        <div class="crud-content">
+          <p>
+            Allows users to create new user profiles, habits, mood entries,
+            and hydration records. New data is stored securely using the
+            Room Database.
+          </p>
+        </div>
+
+      </div>
+
+
+
+      <div class="crud-item">
+
+        <div class="crud-title">
+          <h3>Read</h3>
+        </div>
+
+        <div class="crud-content">
+          <p>
+            Retrieves user-specific information such as daily habits,
+            completion history, mood records, and hydration progress.
+            Kotlin Flow provides real-time data updates.
+          </p>
+        </div>
+
+      </div>
+
+
+
+      <div class="crud-item">
+
+        <div class="crud-title">
+          <h3>Update</h3>
+        </div>
+
+        <div class="crud-content">
+          <p>
+            Enables modification of habits, completion status, mood details,
+            hydration levels, and user preferences.
+          </p>
+        </div>
+
+      </div>
+
+
+
+      <div class="crud-item">
+
+        <div class="crud-title">
+          <h3>Delete</h3>
+        </div>
+
+        <div class="crud-content">
+          <p>
+            Removes unwanted habits, outdated records, and user data while
+            maintaining proper database management.
+          </p>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
 
 <section>
     <h2>Advanced Features</h2>
 
         <ul class="outcomes">
-          <li>Hydration reminder notifications.</li>
-
-          <li>PDF progress and mood report generation.</li>
-
-          <li>Dark mode support.</li>
-
-          <li>Mood visualization through weekly summaries.</li>
-
-          <li>Persistent user preferences using SharedPreferences.</li>
+          <li>Habit tracking</li>
+          <li>Mood monitoring</li>
+          <li>Hydration reminders</li>
+          <li>Weekly mood visualization</li>
+          <li>PDF progress reports</li>
+          <li>Personalized onboarding</li>
+          <li>Dark Mode</li>
+          <li>User-specific data isolation</li>
+          <li>Real-time data updates using Kotlin Flow</li>
+          <li>Local notifications</li>
+          <li>Persistent user preferences</li>
+        </ul>
         </ul>
 </section>
 
@@ -277,13 +475,11 @@ MainActivity<br>
 <!-- ================= UI DESIGN ================= -->
 <section>
     <h2>UI / UX Design</h2>
-
-        <p>
-          The application uses a natural green color palette to create a calm
-          and positive wellness experience. The interface focuses on simplicity,
-          readability and motivation through clean layouts and clear progress
-          indicators.
-        </p>
+    <p>HappyMe follows a calm and minimal design philosophy centered around wellness and positivity.</p>
+    <h3>Color Palette</h3>
+    <p>Moss Green  |  Tea Green  |  Spring Mist  |  White  |  Black</p>
+    <img src="../assets/images/happyMe/color_palette.png" alt="Color Palette" class="color-palette">
+    <p>The interface emphasizes readability, simplicity, and accessibility while providing clear visual feedback through progress indicators, charts, and motivational elements.</p>
 </section>
 
 <!-- ================= SCREENSHOTS ================= -->
@@ -337,23 +533,39 @@ MainActivity<br>
 
 
 <section>
-<h2>Project Outcomes</h2>
+<h2>Challenges</h2>
 
         <ul class="outcomes">
           <li>
-            Developed a complete Android wellness application using Kotlin and
-            XML.
+            Designed a clean and intuitive wellness-focused user interface.
           </li>
 
-          <li>Implemented local data persistence using SharedPreferences.</li>
+          <li>Implemented local data persistence using Room Database and SharedPreferences.</li>
+          <li>Managed multiple features through a modular MVVM and Fragment-based architecture.</li>
+          <li>Integrated notifications and PDF report generation.</li>
+        </ul>
+</section>
 
-          <li>Designed a modular Fragment-based application structure.</li>
 
-          <li>
-            Integrated habit tracking, mood monitoring and hydration management.
-          </li>
+<section>
+<h2>Key Learnings</h2>
 
-          <li>Created a responsive and user-friendly mobile interface.</li>
+        <ul class="outcomes">
+          <li>Building Android applications using MVVM architecture.</li>
+          <li>Implementing modern Android development practices.</li>
+          <li>Managing local data with Room Database and SharedPreferences.</li>
+          <li>Using Coroutines and Kotlin Flow for efficient data handling.</li>
+          <li>Designing user-friendly and responsive mobile interfaces.</li>
+        </ul>
+</section>
+<section>
+<h2>Project Outcomes</h2>
+
+        <ul class="outcomes">
+          <li>Developed a complete Android wellness application using Kotlin and XML.</li>
+          <li>Implemented habit tracking, mood monitoring, and hydration management.</li>
+          <li>Applied MVVM architecture with local data persistence.</li>
+          <li>Created a responsive, user-friendly application with personalized features.</li>
         </ul>
 </section>
 
@@ -361,18 +573,18 @@ MainActivity<br>
 
 <section>
     <h2>GitHub Repository</h2>
-    <p>Source code, SQL scripts, ETL packages and analysis workflow.</p>
+    <p>Android application source code</p>
 
-    <a href="https://github.com/Ishoda/Retail-Analytics-Data-Warehouse.git" class="github">View Repository →</a>
+    <a href="https://github.com/Ishoda/Habbit_Tracker.git" class="github">View Repository →</a>
 </section>
 
 
 
 
 
-<footer>
+<!-- <footer>
     © 2026 Ishoda Moderage
-</footer>
+</footer> -->
 
 
 
@@ -554,6 +766,11 @@ MainActivity<br>
           and measure their progress. HappyMe addresses this challenge by
           providing a single platform that supports consistency, mindfulness and
           self-improvement.
+          Many people struggle to maintain healthy routines because they use separate 
+          apps—or none at all—to track habits, hydration, and emotional well-being. 
+          HappyMe addresses this by providing a single, user-friendly platform that 
+          encourages consistency through habit tracking, mood monitoring, hydration
+           reminders, and personalized progress insights.
         </p>
       </div>
     </section>
@@ -773,9 +990,9 @@ MainActivity
         </ul>
       </div>
     </section>
-
+ -->
     <footer>
-      <p>© 2026 Ishoda Umayangana</p>
-    </footer> -->
+      <p>© 2026 Ishoda Moderage</p>
+    </footer>
   </body>
 </html>
