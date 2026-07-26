@@ -22,12 +22,16 @@
   // Active nav link on scroll
   const links = Array.from(document.querySelectorAll(".nav-link"));
   const sections = links
-    .map((l) => document.querySelector(l.getAttribute("href")))
-    .filter(Boolean);
+  .map((link) => {
+    const href = link.getAttribute("href");
+    const hash = href.includes("#") ? href.substring(href.indexOf("#")) : "";
+    return hash ? document.querySelector(hash) : null;
+  })
+  .filter(Boolean);
   if ("IntersectionObserver" in window && sections.length) {
     const setActive = (id) => {
       links.forEach((l) =>
-        l.classList.toggle("active", l.getAttribute("href") === `#${id}`),
+        l.classList.toggle("active", l.getAttribute("href").endsWith(`#${id}`)),
       );
     };
     const sectionObserver = new IntersectionObserver(
@@ -60,4 +64,10 @@
   } else {
     revealables.forEach((el) => el.classList.add("is-visible"));
   }
+
+  fetch("header.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
+  });
 })();
